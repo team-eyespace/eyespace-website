@@ -17,7 +17,7 @@ $(document).ready(function() {
 				alert("Enter Message");
 			} else {
 				$.ajax({
-					url: '',
+					url: 'https://script.google.com/macros/s/AKfycbylAt9u6KMyxq6t1R09KsG4eFix8g2gW3W3Ay1MNa-rctcCmmQ/exec',
 					method: "POST",
 					data: {
 						"name": name,
@@ -26,6 +26,8 @@ $(document).ready(function() {
 					},
 					success: function(response) {
 						if (response.result == "success") {
+							contact_success();
+							alert("Thanks for reaching out! We will be in touch soon!")
 
 						} else {
 							alert("Failed to register! Please try again!");
