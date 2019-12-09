@@ -11,7 +11,7 @@ $(document).ready(function() {
 			var message = $("#contact_message").val();
 			if (name.length < 3) {
 				alert("Enter Name");
-			} else if (email.length < 3) {
+			} else if (email.length == "/^[\W]*([\w+\-.%]+@[\w\-.]+\.[A-Za-z]{2,4}[\W]*,{1}[\W]*)*([\w+\-.%]+@[\w\-.]+\.[A-Za-z]{2,4})[\W]*$/") {
 				alert("Enter Email");
 			} else if (message.length < 3) {
 				alert("Enter Message");
