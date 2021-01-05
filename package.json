@@ -7,7 +7,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "dialogflow": "^0.8.0",
     "firebase": "^5.7.2",
     "firebaseui": "^3.5.1",
